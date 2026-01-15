@@ -10,8 +10,8 @@ import * as Location from 'expo-location';
 // ---------------------------------------------------------
 // CONFIGURATION & API KEYS
 // ---------------------------------------------------------
-const ORS_API_KEY = "eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6ImNiZWQzZGViZGVhOTQ3NTRiMmU3ZTVmMGQ5YmFkMmIzIiwiaCI6Im11cm11cjY0In0="; 
-const OWM_API_KEY = "268229c579a16948745591681f518d8a";
+ // const ORS_API_KEY = 
+ // const OWM_API_KEY = 
 
 export default function App() {
   const mapRef = useRef(null); 
