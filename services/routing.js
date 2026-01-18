@@ -1,4 +1,5 @@
-import { ORS_API_KEY, OWM_API_KEY } from "../constants/config";
+const ORS_API_KEY = process.env.ORS_API_KEY;
+const OWM_API_KEY = process.env.OWM_API_KEY;
 
 export async function getRouteAQI(points) {
   if (!points || points.length === 0) return 3;

@@ -1,7 +1,11 @@
-import { useState, useEffect, useRef } from "react";
 import * as Location from "expo-location";
+import { useEffect, useRef, useState } from "react";
 import { Alert } from "react-native";
-import { DEFAULT_ZOOM } from "../constants/config";
+
+const DEFAULT_ZOOM = {
+  latitudeDelta: parseFloat(process.env.DEFAULT_ZOOM_LATITUDE_DELTA),
+  longitudeDelta: parseFloat(process.env.DEFAULT_ZOOM_LONGITUDE_DELTA),
+};
 
 export function useLocation() {
   const [location, setLocation] = useState(null);
